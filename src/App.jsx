@@ -1,19 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
 
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="container mx-auto p-4" style={{ marginLeft: '250px' }}>
+      <div className="container-fluid p-4">
         <Routes>
-          <Route path="/" element={<h1>Início</h1>} />
-          <Route path="/sobre" element={<h1>Sobre</h1>} />
-          <Route path="/certificados" element={<h1>Certificados</h1>} />
-          <Route path="/skills" element={<h1>Skills</h1>} />
-          <Route path="/projetos" element={<h1>Projetos</h1>} />
-          <Route path="/estatisticas" element={<h1>Estatísticas</h1>} />
-          <Route path="/contato" element={<h1>Contato</h1>} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
