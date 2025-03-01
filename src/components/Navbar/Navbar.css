@@ -1,0 +1,71 @@
+/* Navbar lateral */
+.sidebar {
+  width: 80px; /* Largura inicial */
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--bg-sidebar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: width 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Ícones do menu */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilização padrão dos itens */
+.nav-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 22px; /* Ícones maiores */
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+/* Hover: Apenas o título do menu em destaque aparece */
+.nav-list li span {
+  position: absolute;
+  left: 70px;
+  background: #f7df1e; /* Cor amarela Python & JavaScript */
+  color: #222;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.nav-list li:hover {
+  color: #f7df1e; /* Amarelo */
+  transform: scale(1.2);
+}
+
+/* Mostrar apenas o nome do item que está em foco */
+.nav-list li:hover span {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
