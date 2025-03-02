@@ -33,9 +33,14 @@
   width: 100%;
   padding: 15px 0;
   cursor: pointer;
-  font-size: 22px; /* Ícones maiores */
-  transition: background 0.3s, color 0.3s, transform 0.3s;
+  font-size: 35px; /* Ícones maiores */
   position: relative;
+  color: #f7df1e; /* Cor amarela para os ícones */
+}
+
+/* Aplica a cor amarela aos ícones SVG */
+.nav-list li a svg {
+  color: #f7df1e; /* Cor amarela para os ícones */
 }
 
 /* Hover: Apenas o título do menu em destaque aparece */
@@ -57,7 +62,6 @@
 
 /* Efeito ao passar o mouse */
 .nav-list li:hover {
-  color: #f7df1e; /* Amarelo */
   transform: scale(1.2);
 }
 
