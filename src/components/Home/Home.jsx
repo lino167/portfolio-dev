@@ -22,9 +22,6 @@ const Home = () => {
           <p className="description">
             Sou desenvolvedor Fullstack, com um forte foco em Python, Ruby e outras tecnologias que me permitem criar soluções completas e inovadoras. Atualmente, estou aprimorando minhas habilidades em Frontend, Backend, Inteligência Artificial, Mobile com React Native e análise de dados. Com uma abordagem prática e focada, estou preparado para construir desde aplicações web dinâmicas até sistemas complexos de automação e análise.
           </p>
-          <Button variant="primary" href="#projetos" className="cta-button">
-            Veja Meus Projetos
-          </Button>
         </div>
         <div className="home-image">
           <img
@@ -32,6 +29,9 @@ const Home = () => {
             alt="Minha imagem"
             className="img-fluid avatar"
           />
+          <Button variant="primary" href="#projetos" className="cta-button">
+            Saiba mais
+          </Button>
         </div>
       </Container>
     </section>
