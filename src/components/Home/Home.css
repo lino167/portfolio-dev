@@ -13,29 +13,42 @@
 .home-content {
   z-index: 2;
   width: 100%;
+  max-width: 1200px; /* Limita a largura máxima */
   padding: 20px;
 }
 
-.heading {
-  font-size: 2.8em;
+.welcome-text {
+  margin-bottom: 50px;
+  font-size: 3em;
   font-weight: bold;
-  margin-bottom: 10px; /* Espaço entre o título e o texto */
+  
+}
+
+.typewriter {
+  font-size: 2em; /* Tamanho da fonte da frase de boas-vindas */
+  font-weight: bold;
 }
 
 .highlight {
-  color: #f7df1e;
+  color: #f7df1e; /* Destaca a palavra "digital" em amarelo */
+}
+
+.heading {
+  font-size: 3.5em; /* Aumenta o tamanho da fonte */
+  font-weight: bold;
+  margin-bottom: 20px; /* Espaço entre o título e o texto */
 }
 
 .description {
-  font-size: 1.2em;
-  margin-top: 10px;
-  margin-bottom: 20px; /* Espaço entre a descrição e o botão */
+  font-size: 1.5em; /* Aumenta o tamanho da fonte */
+  margin-top: 20px;
+  margin-bottom: 30px; /* Espaço entre a descrição e o botão */
 }
 
 .cta-button {
-  margin-top: 20px;
-  padding: 10px 25px;
-  font-size: 1.2em;
+  margin-top: 30px;
+  padding: 15px 30px; /* Aumenta o tamanho do botão */
+  font-size: 1.5em; /* Aumenta o tamanho da fonte do botão */
   background-color: #f7df1e;
   color: #222;
   border: none;
@@ -56,8 +69,34 @@
 }
 
 .home-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+  width: 300px; /* Define um tamanho fixo para a imagem */
+  height: 300px; /* Define um tamanho fixo para a imagem */
+  border-radius: 50%; /* Torna a imagem circular */
+  border: 2px solid #fff; /* Adiciona uma borda branca */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+  object-fit: cover; /* Garante que a imagem se ajuste corretamente dentro do círculo */
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5em; /* Ajusta o tamanho da fonte em telas menores */
+  }
+
+  .description {
+    font-size: 1.2em; /* Ajusta o tamanho da descrição para telas menores */
+  }
+
+  .cta-button {
+    font-size: 1.2em;
+    padding: 10px 25px;
+  }
+
+  .home-image {
+    margin-top: 20px;
+  }
+
+  .home-image img {
+    width: 150px; /* Ajusta o tamanho da imagem para telas menores */
+    height: 150px; /* Ajusta o tamanho da imagem para telas menores */
+  }
 }

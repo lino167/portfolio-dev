@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Particle from "./Particle";
 import TypewriterEffect from "./Typewriter";
+import TypewriterWelcome from "./TypewriterWelcome";
+import avatar from "../../assets/avatar.png"; // Importa a imagem de avatar
 import "./Home.css";
 
 const Home = () => {
@@ -9,6 +11,11 @@ const Home = () => {
     <section className="home-section">
       <Particle /> {/* Partículas no fundo */}
       <Container className="home-content">
+        <Row>
+          <Col className="welcome-text">
+            <TypewriterWelcome />
+          </Col>
+        </Row>
         <Row>
           {/* Texto de apresentação */}
           <Col md={7} className="home-text">
@@ -27,9 +34,9 @@ const Home = () => {
           {/* Imagem ou Ilustração */}
           <Col md={5} className="home-image">
             <img
-              src="https://via.placeholder.com/350"
+              src={avatar} // Utiliza a imagem importada
               alt="Minha imagem"
-              className="img-fluid"
+              className="img-fluid avatar"
             />
           </Col>
         </Row>
