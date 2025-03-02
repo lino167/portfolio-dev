@@ -11,35 +11,28 @@ const Home = () => {
     <section className="home-section">
       <Particle /> {/* Partículas no fundo */}
       <Container className="home-content">
-        <Row>
-          <Col className="welcome-text">
-            <TypewriterWelcome />
-          </Col>
-        </Row>
-        <Row>
-          {/* Texto de apresentação */}
-          <Col md={7} className="home-text">
-            <h1 className="heading">
-              Olá, eu sou <span className="highlight">Zacarias Ramos</span> 👋
-            </h1>
-            <TypewriterEffect />
-            <p className="description">
-              Desenvolvedor Fullstack focado em criar soluções eficientes e inovadoras.
-            </p>
-            <Button variant="primary" href="#projetos" className="cta-button">
-              Veja Meus Projetos
-            </Button>
-          </Col>
-
-          {/* Imagem ou Ilustração */}
-          <Col md={5} className="home-image">
-            <img
-              src={avatar} // Utiliza a imagem importada
-              alt="Minha imagem"
-              className="img-fluid avatar"
-            />
-          </Col>
-        </Row>
+        <div className="welcome-text">
+          <TypewriterWelcome />
+        </div>
+        <div className="home-text">
+          <h1 className="heading">
+            Olá, eu sou <span className="highlight">Zacarias Ramos</span> 👋
+          </h1>
+          <TypewriterEffect />
+          <p className="description">
+            Sou desenvolvedor Fullstack, com um forte foco em Python, Ruby e outras tecnologias que me permitem criar soluções completas e inovadoras. Atualmente, estou aprimorando minhas habilidades em Frontend, Backend, Inteligência Artificial, Mobile com React Native e análise de dados. Com uma abordagem prática e focada, estou preparado para construir desde aplicações web dinâmicas até sistemas complexos de automação e análise.
+          </p>
+          <Button variant="primary" href="#projetos" className="cta-button">
+            Veja Meus Projetos
+          </Button>
+        </div>
+        <div className="home-image">
+          <img
+            src={avatar} // Utiliza a imagem importada
+            alt="Minha imagem"
+            className="img-fluid avatar"
+          />
+        </div>
       </Container>
     </section>
   );

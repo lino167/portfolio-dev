@@ -1,27 +1,30 @@
 .home-section {
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-items: center;
+  gap: 20px; /* Espaçamento entre os elementos */
   color: white;
   text-align: center;
   overflow: hidden;
-  padding: 20px; /* Adiciona espaçamento interno */
+  padding: 10px; /* Adiciona espaçamento interno */
   height: 100vh; /* Ocupa toda a altura da viewport */
 }
 
 .home-content {
   z-index: 2;
   width: 100%;
-  max-width: 1200px; /* Limita a largura máxima */
-  padding: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .welcome-text {
-  margin-bottom: 50px;
-  font-size: 3em;
+  grid-column: span 2;
+  font-size: 2em;
   font-weight: bold;
-  
+  margin-bottom: 50px;
 }
 
 .typewriter {
@@ -36,13 +39,14 @@
 .heading {
   font-size: 3.5em; /* Aumenta o tamanho da fonte */
   font-weight: bold;
-  margin-bottom: 20px; /* Espaço entre o título e o texto */
+  margin-bottom: 40px; /* Espaço entre o título e o texto */
 }
 
 .description {
-  font-size: 1.5em; /* Aumenta o tamanho da fonte */
+  width: 100%;
+  font-size: 1.2em; /* Aumenta o tamanho da fonte */
   margin-top: 20px;
-  margin-bottom: 30px; /* Espaço entre a descrição e o botão */
+  margin-bottom: 40px; /* Espaço entre a descrição e o botão */
 }
 
 .cta-button {
@@ -64,7 +68,6 @@
 }
 
 .home-image {
-  margin-top: 30px; /* Espaço acima da imagem */
   text-align: center;
 }
 

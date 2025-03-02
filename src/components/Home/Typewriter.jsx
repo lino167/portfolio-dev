@@ -7,15 +7,15 @@ const TypewriterEffect = () => {
       <Typewriter
         options={{
           strings: [
-            "Desenvolvedor Fullstack",
-            "Criador de Soluções Web",
-            "Apaixonado por Tecnologia",
-            "Desenvolvedor python",
+            "Desenvolver aplicações Fullstack",
+            "Criar soluções de automação e análise de dados",
+            "Construir plataformas robustas com Ruby on Rails",
+            "Desenvolver soluções com Inteligência Artificial",
           ],
           autoStart: true,
           loop: true,
-          delay: 75,
-          deleteSpeed: 50,
+          delay: 150,
+          deleteSpeed: 100,
         }}
       />
     </h2>
